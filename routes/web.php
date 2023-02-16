@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminMajorController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectController;
@@ -65,7 +66,7 @@ Route::get('/register', [RegisterController::class, 'index'])->middleware('guest
 // route untuk memberikan function store dari RegisterController kepada /register yang mana methodnya POST
 Route::post('/register', [RegisterController::class, 'store']);
 
-// Route::get('/dashboard', [DashboardProjectController::class, 'index'])->middleware('auth');
+// Route::get('/dashboard', [DashboardProjectController::claPstyss, 'index'])->middleware('auth');
 
 Route::get('/dashboard', function() {
     return view('dashboard.index');
@@ -93,3 +94,5 @@ Route::get('/authors/{author:username}', function(User $author){
         'projects' => $author->project->load('major', 'user'),
     ]);
 });
+// excerpt (kecuali show)
+Route::resource('/dashboard/major', AdminMajorController::class)->except('show')->middleware('admin');

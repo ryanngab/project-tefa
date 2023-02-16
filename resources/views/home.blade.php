@@ -3,52 +3,45 @@
 @section('container')
 
 
-<div class="card" style="width: 900px;  background-color: rgba(233, 228, 228, 0.641); height: 400px;" >
-    	<div class="text1">
-		       <div class="text">
-			         <p id="tag">
-			              <strong>SMK WIKRAMA BOGOR</strong>
-	                 </p>
-					    <h1>TEFA</h1>
-                        Tefa adalah model pemebelajaran bagi sekolah vokasi baik itu smk wikrama maupun perguruan tinggi
-                    Vokasi berbasis produksi/jasa yang mengacu pada standar dan prosedur yang berlaku di industri dan dilaksanakan dalam suasana yang terjadi di industri</p>
-              </div>
-       </div>
-</div>
-<img src="img/logo-wk.png" />
-<style>
+<section class="gradient-banner" style="background-image: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+        ),
+        url('img/1.jpg'); background-repeat:no-repeat">
 
-body {
- background-image: url(/img/1.jpg);
- background-repeat: no-repeat;
- background-size: cover;
- }
+  <div class="container mt-1" id="beranda">
+    <div class="row align-items-center">
+      <div class="col-12 order-2 order-md-1 text-center text-md-left mt-5">
+        <h2 class="text-white font-weight-bold mb-3">PPDB TP 2023-2024<br>SMK Wikrama Bogor</h2>
+        <p class="text-white mb-5">Ayo! segera daftarkan dirimu ke SMK Wikrama dengan cara klik <b>PENDAFTARAN PPDB</b> dibawah ini! <br><strong>Ilmu yang Amaliah, Amal yang Ilmiah, Akhlakul Karimah.</strong></p>
+        <a href="/register" class="btn btn-main-md shadow-md bordered font-weight-bold">Pendaftaran PPDB</a>
+      </div>
 
- .img { 
-  width: 200px;;
-  max-width: 200px;
-  height: auto;
-  float: right;
-}
+    </div>
+  </div>
+</section>
+
+<section class="pt-0 position-relative pull-top mb-5" id="jumbotron-card">
+  <div class="container">
+    <div class="rounded shadow p-5 bg-white">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-0 text-center">
+          <h3 class="font-weight-bold text-capitalize h5 ">MOTTO</h3>
+          <p class="regular text-muted">Ilmu yang Amaliah, Amal yang Ilmiah, Akhlaqul Karimah</p>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+          <h3 class="font-weight-bold text-capitalize h5 ">AFIRMASI</h3>
+          <p class="regular text-muted">Padamu negeri - kami berjanji - lulus Wikrama siap membangun negeri</p>
+        </div>
+        <div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
+          <h3 class="font-weight-bold text-capitalize h5 ">ATITUDE</h3>
+          <p class="regular text-muted">Aku ada lingkunganku <br> bahagia</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-
-
-.text1 {
-  margin: 0 64px;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-}
-
-h1 {
-  margin-top: 0;
-}
-
-#tag {
-  margin-top: 0;
-  margin-bottom: 24px;
-  letter-spacing: 3px;
-}
-</style>
 @endsection

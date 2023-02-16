@@ -9,10 +9,10 @@
        font-family: 'Poppins', sans-serif;
    }
    
-   body {
+   /* body {
        background: #ecf0f3;
 
-   }
+   } */
    
    .wrapper {
        max-width: 350px;
@@ -47,7 +47,7 @@
        padding-left: 10px;
        color: #555;
    }
-   
+
    .wrapper .form-field input {
        width: 100%;
        display: block;
